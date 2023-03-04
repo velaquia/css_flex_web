@@ -1,0 +1,58 @@
+/* Utilizando el selector universal (apunt a a todos)
+ para realizar el set de CSS*/
+ * {
+  /* se eliminan todos los margin por defecto */
+  margin: 0;
+  /* se eliminan todos los padding por defecto */
+  padding: 0; 
+  /* se elimina el estilo de las listas */
+  list-style-type: none;
+  /* el padding y border se consideran para calcular
+   el tamaño de la caja */
+  box-sizing: border-box;
+  /* se elimina el subrayado de los links <a> */
+  text-decoration: none
+}
+
+body, html {
+  height: 100%;
+  background-color: gray;
+}
+
+.contenedor {
+  height: 100%;
+  display: flex;
+  flex-direction: column;  /* column: vertical */
+  justify-content: center; /* alineación a lo alto -> vertical */
+  align-items: center; /* alineación a lo ancho -> horizontal */
+  gap: 10px;   /* dejar espacio entre elementos en el contendor */
+}
+
+.contenedor img {
+  width: 150px;
+}
+
+.caja1 {
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+}
+
+.caja2 { 
+  width: 150px;
+  height: 150px;
+  background-color: red;
+}
+
+.caja3 { 
+    width: 150px;
+    height: 150px;
+    background-color: green;
+}
+
+.caja4
+{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}

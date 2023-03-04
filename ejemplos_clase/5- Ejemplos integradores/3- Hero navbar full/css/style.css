@@ -1,0 +1,111 @@
+/* Utilizando el selector universal (apunt a a todos)
+ para realizar el set de CSS*/
+ * {
+  /* se eliminan todos los margin por defecto */
+  margin: 0;
+  /* se eliminan todos los padding por defecto */
+  padding: 0; 
+  /* se elimina el estilo de las listas */
+  list-style-type: none;
+  /* el padding y border se consideran para calcular
+   el tamaño de la caja */
+  box-sizing: border-box;
+  /* se elimina el subrayado de los links <a> */
+  text-decoration: none
+}
+
+/* ------- Header style ------- */
+
+header {
+  background-color: black;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Manipulamos el texto que se muestra en la navbar */
+#tituloNavbar {
+  font-size: 25px;
+  padding: 10px;
+  color: white;
+}
+
+/* fila de elementos del header */
+/* formado por una lista de elementos (ul) */ 
+/*
+- Alinear todos los elementos unos al lado de otros (flex-direction:row)
+- Se distrubuyen los elementos para que tomen todo el ancho de manera equitativa (justify-content space-arround)
+- Se centraron los elementos a lo alto (align-items center)
+*/
+header > nav > ul {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ------- Main style (contenido principal) ------- */
+main {
+  background-image: url(../images/fondo.jpg);
+}
+
+/* ------- Article style ------- */
+/*
+- Establecer que el artículo (la card) tome todo el ancho
+  disponible --> width: 100%
+- Alinear todos los elementos unos encima de otros (flex-direction:column)
+- Se centraron los elementos en el eje horizontal/principal (justify-content center)
+- Se centraron los elementos en el eje vertical/secondario (align-items center)
+*/
+article {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.titulo > span {
+  font-size: 40px;
+}
+
+.titulo > p {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.descripcion {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.descripcion > p {
+  color: gray;
+}
+
+.descripcion > a {
+  text-decoration: none;
+  color: darkcyan;
+  font-size: 20px;
+}
+
+/* ------- Footer style ------- */
+
+footer {
+  background-color: black;
+  padding: 5px;
+  text-align: center;
+}
+
+footer > span {
+  color: white;
+  font-size: 20px;
+}

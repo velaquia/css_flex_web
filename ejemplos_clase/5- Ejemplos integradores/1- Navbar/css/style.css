@@ -1,0 +1,43 @@
+/* Utilizando el selector universal (apunt a a todos)
+ para realizar el set de CSS*/
+ * {
+  /* se eliminan todos los margin por defecto */
+  margin: 0;
+  /* se eliminan todos los padding por defecto */
+  padding: 0; 
+  /* se elimina el estilo de las listas */
+  list-style-type: none;
+  /* el padding y border se consideran para calcular
+   el tamaño de la caja */
+  box-sizing: border-box;
+  /* se elimina el subrayado de los links <a> */
+  text-decoration: none
+}
+
+/* ------- Header style ------- */
+
+header {
+  background-color: black;
+  padding-top: 10px;
+}
+
+/* Manipulamos el texto que se muestra en la navbar */
+#tituloNavbar {
+  font-size: 25px;
+  padding: 10px;
+  color: white;
+}
+
+/* fila de elementos del header */
+/* formado por una lista de elementos (ul) */ 
+/*
+- Alinear todos los elementos unos al lado de otros (flex-direction:row)
+- Se distrubuyen los elementos para que tomen todo el ancho de manera equitativa (justify-content space-arround)
+- Se centraron los elementos a lo alto (align-items center)
+*/
+header > nav > ul {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

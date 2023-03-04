@@ -1,0 +1,57 @@
+/* Utilizando el selector universal (apunt a a todos)
+ para realizar el set de CSS*/
+ * {
+  /* se eliminan todos los margin por defecto */
+  margin: 0;
+  /* se eliminan todos los padding por defecto */
+  padding: 0; 
+  /* se elimina el estilo de las listas */
+  list-style-type: none;
+  /* el padding y border se consideran para calcular
+   el tamaño de la caja */
+  box-sizing: border-box;
+  /* se elimina el subrayado de los links <a> */
+  text-decoration: none
+}
+
+body, html {
+  height: 100%;
+}
+
+.contenedor {
+  width: 100%;
+  height: 100%;
+  
+  /* Implementar el manejo de flex */
+}
+
+article {
+  width: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #222435;
+
+  /* Implementar el manejo de flex */
+}
+
+.contenedorPrecio {
+  width: 100%;
+  /* Implementar el manejo de flex */
+}
+
+.precio {
+  color: #edf2f4;
+  font-size: 25px;
+}
+
+.descuento {
+  color: #2ec4b6;
+  font-size: 16px;
+}
+
+img {
+  width: 200px;
+  border-radius: 20px;
+  background-color: #343c8a;
+}
+
